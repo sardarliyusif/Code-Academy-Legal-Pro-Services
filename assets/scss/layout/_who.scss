@@ -1,0 +1,45 @@
+.who-we-are {
+  margin-top: 5rem;
+
+  @extend .center, .f-d-column;
+  .section__head {
+    @include section-head;
+  }
+  .section__info {
+    @include section-info;
+    margin: 2rem auto;
+    line-height: 1rem;
+  }
+  .who__video {
+    display: flex;
+    .who__left {
+      @extend .col-6;
+      background-image: url("../img/whoweare.svg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 500px;
+      border-radius: 15px;
+      position: relative;
+      &__img {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%)
+      }
+    }
+    .who__right {
+        padding: 6rem;
+      @extend .col-6, .center, .f-d-column;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .who__video {
+    flex-direction: column;
+    .who__left,.who__right{
+        width: 100% !important;
+    }
+  }
+}

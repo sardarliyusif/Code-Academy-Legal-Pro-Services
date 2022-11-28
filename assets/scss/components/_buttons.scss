@@ -1,0 +1,26 @@
+.btn--trans--yellow{
+    background-color: $color-transparent;   
+    color: $color-yellow;
+    padding: 0.75rem 2rem;
+    border-radius: 2rem;
+    border: 1px solid $color-yellow;
+}
+.btn--yellow{
+    background-color: $color-yellow;   
+    color: $color-white;
+    padding: 0.75rem 2rem;
+    border-radius: 2rem;
+}
+.btn--trans--brown{
+    background-color: $color-transparent;   
+    color: $color-brown;
+    padding: 0.75rem 2rem;
+    border-radius: 2rem;
+    border: 1px solid $color-brown;
+}
+.btn--brown{
+    background-color: $color-brown;   
+    color: $color-white;
+    padding: 0.75rem 2rem;
+    border-radius: 2rem;
+}

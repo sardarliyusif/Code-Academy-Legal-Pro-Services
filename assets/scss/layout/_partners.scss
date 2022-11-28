@@ -1,0 +1,17 @@
+.partners{
+    .container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2rem 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .partners{
+        .container{
+            flex-direction: column;
+            gap: 3rem;
+        }
+    }
+  }

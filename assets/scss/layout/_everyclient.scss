@@ -1,0 +1,31 @@
+.every-client{
+    margin-top: 5rem;
+    
+    @extend .center,.f-d-column;
+    .section__head{
+        @include section-head;
+    }
+    .section__info{
+        @include section-info;
+        margin: 0 auto
+    }
+    .numbers{
+        @extend .center;
+        gap: 2rem;
+        &__card{
+            @extend .center,.f-d-column;
+            padding: 2rem 3rem;
+            i{
+                @extend .f-size-l;
+                color: $color-yellow;
+
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .numbers{
+        flex-direction: column;
+    }
+  }

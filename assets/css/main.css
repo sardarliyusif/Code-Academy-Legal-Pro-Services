@@ -1,0 +1,479 @@
+@import url("https://fonts.googleapis.com/css2?family=Martel:wght@400;700&display=swap");
+.container {
+  width: 1100px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: 80%;
+  }
+}
+.d-flex, .header .container .law-section, .header .container .navbar__left ul, .header .container .navbar__left, .header .container .navbar, .header .container {
+  display: flex;
+}
+
+.d-block {
+  display: block;
+}
+
+.d-none {
+  display: none;
+}
+
+.center, .who-we-are .who__video .who__right, .who-we-are, .practice .numbers__card, .practice .numbers, .practice, .every-client .numbers__card, .every-client .numbers, .every-client {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.f-d-column, .who-we-are .who__video .who__right, .who-we-are, .practice .numbers__card, .practice, .every-client .numbers__card, .every-client, .header .container {
+  flex-direction: column;
+}
+
+.f-jt-center {
+  justify-content: center;
+}
+
+.f-jt-s-between, .header .container .law-section, .header .container .navbar, .header .container {
+  justify-content: space-between;
+}
+
+.f-ai-center, .header .container .navbar__left ul, .header .container .navbar__left, .header .container .navbar {
+  align-items: center;
+}
+
+.f-wrap {
+  flex-wrap: wrap;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  box-sizing: border-box;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+html {
+  font-family: "Martel", serif;
+}
+
+.f-size-xs, .practice .section__info {
+  font-size: 0.875rem;
+}
+
+.f-size-s, .who-we-are .section__info, .every-client .section__info {
+  font-size: 1rem;
+}
+
+.f-size-m, .header .container .law-section__part .part__name {
+  font-size: 1.5rem;
+}
+
+.f-size-l, .who-we-are .section__head, .practice .section__head, .every-client .numbers__card i, .every-client .section__head, .header .container .law-section__part i {
+  font-size: 2.5rem;
+}
+
+.f-size-xl, .header .container .header__content h1 {
+  font-size: 3.5rem;
+}
+
+.f-weight--r {
+  font-weight: 400;
+}
+
+.f-weight--b, .who-we-are .section__head, .practice .section__head, .every-client .section__head, .header .container .header__content h1 {
+  font-weight: 700;
+}
+
+.btn--trans--yellow {
+  background-color: transparent;
+  color: #D0A144;
+  padding: 0.75rem 2rem;
+  border-radius: 2rem;
+  border: 1px solid #D0A144;
+}
+
+.btn--yellow {
+  background-color: #D0A144;
+  color: #fff;
+  padding: 0.75rem 2rem;
+  border-radius: 2rem;
+}
+
+.btn--trans--brown {
+  background-color: transparent;
+  color: #784F33;
+  padding: 0.75rem 2rem;
+  border-radius: 2rem;
+  border: 1px solid #784F33;
+}
+
+.btn--brown {
+  background-color: #784F33;
+  color: #fff;
+  padding: 0.75rem 2rem;
+  border-radius: 2rem;
+}
+
+/* For desktop: */
+.col-1 {
+  width: 8.33%;
+}
+
+.col-2 {
+  width: 16.66%;
+}
+
+.col-3 {
+  width: 25%;
+}
+
+.col-4 {
+  width: 33.33%;
+}
+
+.col-5 {
+  width: 41.66%;
+}
+
+.col-6, .who-we-are .who__video .who__right, .who-we-are .who__video .who__left {
+  width: 50%;
+}
+
+.col-7 {
+  width: 58.33%;
+}
+
+.col-8 {
+  width: 66.66%;
+}
+
+.col-9 {
+  width: 75%;
+}
+
+.col-10 {
+  width: 83.33%;
+}
+
+.col-11 {
+  width: 91.66%;
+}
+
+.col-12 {
+  width: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*=col-] {
+    width: 100%;
+  }
+}
+.header {
+  width: 100%;
+  height: 80vh;
+  background-image: url("../img/cover.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.header .container {
+  height: 100%;
+}
+.header .container .navbar {
+  padding: 3rem 0;
+}
+.header .container .navbar__left img {
+  margin-right: 5rem;
+}
+.header .container .navbar__left ul li {
+  margin-right: 1rem;
+}
+.header .container .navbar__left ul li a {
+  color: #737373;
+}
+.header .container .navbar__right .d-none {
+  display: none;
+}
+.header .container .header__content h1 {
+  color: #252B42;
+}
+.header .container .header__content p {
+  color: #737373;
+  max-width: 400px;
+  font-size: 1.25rem;
+  line-height: 2rem;
+  margin: 4rem 0;
+}
+.header .container .header__content__buttons {
+  display: flex;
+  gap: 10px;
+}
+.header .container .law-section {
+  gap: 1rem;
+}
+.header .container .law-section__part {
+  background-color: #fff;
+  padding: 2.25rem 2.5rem;
+  margin-bottom: -2rem;
+  box-shadow: 5px 10px 10px 1px rgba(0, 0, 255, 0.2);
+}
+.header .container .law-section__part i {
+  color: #295C7A;
+}
+.header .container .law-section__part .part__name {
+  color: #295C7A;
+  margin: 1rem 0;
+}
+.header .container .law-section__part .part__info {
+  max-width: 300px;
+  color: #737373;
+}
+.header .container .law-section__part:hover {
+  background-color: #295C7A;
+  cursor: pointer;
+}
+.header .container .law-section__part:hover i, .header .container .law-section__part:hover .part__info, .header .container .law-section__part:hover .part__name {
+  color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    height: 130vh;
+    background-image: none;
+  }
+  .header .container .navbar__left ul {
+    display: none;
+  }
+  .header .container .navbar__right i {
+    font-size: 1.5rem;
+    margin-left: 5rem;
+    color: #737373;
+  }
+  .header .container .navbar__right .d-none {
+    display: inline-block;
+  }
+  .header .container .header__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .header .container .header__content h1 {
+    font-size: 2.5rem;
+    max-width: 240px;
+  }
+  .header .container .header__content p {
+    max-width: 250px;
+  }
+  .header .container .header__content__buttons {
+    align-items: center;
+    flex-direction: column;
+  }
+  .header .container .header__content__buttons a {
+    max-width: -webkit-max-content;
+    max-width: -moz-max-content;
+    max-width: max-content;
+  }
+  .header .container .law-section {
+    flex-direction: column;
+    margin-top: 2rem;
+    gap: 50px;
+  }
+}
+.every-client {
+  margin-top: 5rem;
+}
+.every-client .section__head {
+  color: #252B42;
+  line-height: 50px;
+  text-align: center;
+}
+.every-client .section__info {
+  color: #737373;
+  line-height: 50px;
+  max-width: 500px;
+  text-align: center;
+  margin: 0 auto;
+}
+.every-client .numbers {
+  gap: 2rem;
+}
+.every-client .numbers__card {
+  padding: 2rem 3rem;
+}
+.every-client .numbers__card i {
+  color: #D0A144;
+}
+
+@media screen and (max-width: 768px) {
+  .numbers {
+    flex-direction: column;
+  }
+}
+.practice {
+  margin-top: 5rem;
+}
+.practice .section__head {
+  color: #252B42;
+  line-height: 50px;
+  text-align: center;
+  font-size: 1rem;
+}
+.practice .section__info {
+  color: #737373;
+  text-align: center;
+  max-width: 500px;
+  line-height: 1.5rem;
+  margin: 0 auto;
+}
+.practice .numbers {
+  gap: 2rem;
+}
+.practice .numbers__card img {
+  margin-top: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+  .practice .section__info {
+    max-width: 300px;
+  }
+  .practice .numbers {
+    flex-direction: column;
+  }
+}
+.who-we-are {
+  margin-top: 5rem;
+}
+.who-we-are .section__head {
+  color: #252B42;
+  line-height: 50px;
+  text-align: center;
+}
+.who-we-are .section__info {
+  color: #737373;
+  line-height: 50px;
+  max-width: 500px;
+  text-align: center;
+  margin: 2rem auto;
+  line-height: 1rem;
+}
+.who-we-are .who__video {
+  display: flex;
+}
+.who-we-are .who__video .who__left {
+  background-image: url("../img/whoweare.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+  border-radius: 15px;
+  position: relative;
+}
+.who-we-are .who__video .who__left__img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.who-we-are .who__video .who__right {
+  padding: 6rem;
+}
+
+@media screen and (max-width: 768px) {
+  .who__video {
+    flex-direction: column;
+  }
+  .who__video .who__left, .who__video .who__right {
+    width: 100% !important;
+  }
+}
+.partners .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 0;
+}
+
+@media screen and (max-width: 768px) {
+  .partners .container {
+    flex-direction: column;
+    gap: 3rem;
+  }
+}
+.footer {
+  background-color: rgb(22, 114, 235);
+}
+.footer .container {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 0;
+}
+.footer .container ul li {
+  margin-bottom: 1rem;
+}
+.footer .container ul .footer__head a {
+  font-weight: 700;
+  font-size: 20px;
+}
+.footer .container ul li a {
+  color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+  .footer .container {
+    flex-direction: column;
+    gap: 3rem;
+  }
+}/*# sourceMappingURL=main.css.map */

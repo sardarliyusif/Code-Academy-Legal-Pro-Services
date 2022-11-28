@@ -1,0 +1,13 @@
+@mixin section-head {
+    @extend .f-size-l,.f-weight--b;
+    color: $color-dark-blue;
+    line-height: 50px;
+    text-align: center
+}
+@mixin section-info {
+    @extend .f-size-s;
+    color: $color-link;
+    line-height: 50px;
+    max-width: 500px;
+    text-align: center;
+}
